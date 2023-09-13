@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-13T14:00:21 IDT" name="Default suite" finished-at="2023-09-13T14:01:01 IDT" duration-ms="40048">
+    <groups>
+    </groups>
+    <test started-at="2023-09-13T14:00:21 IDT" name="Default test" finished-at="2023-09-13T14:01:01 IDT" duration-ms="40048">
+      <class name="main.VerifyLoggingIn">
+        <test-method is-config="true" signature="setup()[pri:0, instance:main.VerifyLoggingIn@1349883]" started-at="2023-09-13T14:00:21 IDT" name="setup" finished-at="2023-09-13T14:00:22 IDT" duration-ms="1556" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkingLogo()[pri:1, instance:main.VerifyLoggingIn@1349883]" started-at="2023-09-13T14:00:22 IDT" name="checkingLogo" finished-at="2023-09-13T14:00:30 IDT" duration-ms="7945" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkingLogo -->
+        <test-method signature="login()[pri:2, instance:main.VerifyLoggingIn@1349883]" started-at="2023-09-13T14:00:30 IDT" name="login" finished-at="2023-09-13T14:00:39 IDT" duration-ms="8478" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="CheckLink()[pri:3, instance:main.VerifyLoggingIn@1349883]" started-at="2023-09-13T14:00:39 IDT" name="CheckLink" finished-at="2023-09-13T14:00:41 IDT" duration-ms="2347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckLink -->
+        <test-method signature="CheckFirstName()[pri:4, instance:main.VerifyLoggingIn@1349883]" started-at="2023-09-13T14:00:41 IDT" name="CheckFirstName" finished-at="2023-09-13T14:01:01 IDT" duration-ms="19672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckFirstName -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:main.VerifyLoggingIn@1349883]" started-at="2023-09-13T14:01:01 IDT" name="tearDown" finished-at="2023-09-13T14:01:01 IDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- main.VerifyLoggingIn -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
