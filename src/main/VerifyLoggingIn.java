@@ -58,7 +58,6 @@ public class VerifyLoggingIn {
 		// Open the website
 		driver.get(baseUrl);
 
-//		Thread.sleep(6000);
 
 		try {
 			// Find the login
@@ -67,14 +66,14 @@ public class VerifyLoggingIn {
 			// Click the login link
 			loginLink.click();
 
-			// You can add additional assertions or actions here for the login page.
 		} catch (Exception e) {
 			// Handle the case where the login link is not found
 			System.out.println("Login link not found: " + e.getMessage());
 		}
+		
 		// Verify if the user navigate to the sign in page
-
 		WebElement SignInPage = driver.findElement(By.cssSelector("#BDLoginMessageNormal"));
+		
 		// Check if the user navigate to the log in page
 		if (SignInPage.isDisplayed()) {
 			System.out.println("Welcome to the sign in page");
@@ -140,18 +139,19 @@ public class VerifyLoggingIn {
 		// Click on the "My Account" link
 		myAccountLink.click();
 		
+		// Click on the "Address Book" link
 		WebElement adressBookLink = driver.findElement(By.linkText("Address Book"));
-
 		adressBookLink.click();
 		
 		Thread.sleep(10000);
 		
+		// Fetch the First name
 		WebElement firstName = driver.findElement(By.cssSelector("#gwt_address_display_panel > div > div.gwt-addrbk-addrlist > div > div.gwt-addrbk-addrpanel > div:nth-child(2)"));
 
 		// Get the text from the element
 		String firstNameText = firstName.getText();
 		
-		
+		// Fetch the Welcome text
 		WebElement welcomeName = driver.findElement(By.cssSelector("#welcome"));
 
 		// Get the text from the element
@@ -172,6 +172,6 @@ public class VerifyLoggingIn {
 	@AfterClass
 	public void tearDown() {
 		// Close the browser
-		// driver.quit();
+		driver.quit();
 	}
 }
